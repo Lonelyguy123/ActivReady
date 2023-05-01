@@ -2,15 +2,25 @@
 <html>
   <head>
     <title>ActivReady</title><!--title of the window -->
-    <link rel="stylesheet" href="actread1.css">
+    <link rel="stylesheet" href="stylesheet.css">
   </head>
   <body>
+    <script src="index.js"></script>
     <div class="container"><!--container having the title displayed on top amd also the inputbox used to input the activites-->
       <h1 class="title">ActivReady</h1>
       <form action="" class="form"><!--form can be used for inputs such as buttons,textetc.In this case we use it for an inputbox-->
-        <input type="text" class="inputbox" placeholder="Add activity"><!--this is the inputbox where we can type the activites one by one-->
-        <button class="add">Add</button>
+        <input type="text" class="textbox" placeholder="Add activity" id="askingpart"><!--this is the inputbox where we can type the activites one by one-->
+        <button class="add" onclick="newtask()"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm192 472c0 4.4-3.6 8-8 8H544v152c0 4.4-3.6 8-8 8h-48c-4.4 0-8-3.6-8-8V544H328c-4.4 0-8-3.6-8-8v-48c0-4.4 3.6-8 8-8h152V328c0-4.4 3.6-8 8-8h48c4.4 0 8 3.6 8 8v152h152c4.4 0 8 3.6 8 8v48z"></path></svg></button>
+        <br><br>
+        <!--Task format-->
+        <div id="new">
+            <label>Create A New Task</label>
+            <input type="checkbox">
+            <button id="remove"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M256 48C141.125 48 48 141.125 48 256s93.125 208 208 208 208-93.125 208-208S370.875 48 256 48zm107 229H149v-42h214v42z"></path></svg></button>
+        </div>
       </form>
     </div>
+    
+    
   </body>
 </html>
